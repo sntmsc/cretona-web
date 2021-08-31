@@ -1,0 +1,605 @@
+body{
+    background-color:rgba(14, 142, 192, 0.582); 
+    margin:0 auto;
+}
+#portada{
+    background-color: white;
+    background-image:url(Fondos-de-cielo.jpg);
+    background-size: cover;
+    background-position:center;
+    border-bottom: 1px solid transparent;
+    box-shadow: 2px 2px 2px 2px rgb(2, 2, 34);
+}
+
+
+#portada-container{
+    display:flex;
+    flex-direction: row;
+    height: 3em;
+}
+#portada-redes{
+    width:40%;
+    height:100%;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    left:10%;
+    justify-content: flex-end;
+}
+.portada-redes__items{
+    width:3.5em;
+    height:100%;
+  
+}
+
+.redes-iconos{ 
+    width:70%;
+    height:100%;
+    object-fit: contain;
+}
+#facebook-icono{
+    width:65%;
+}
+#portada-nav{
+    width:50%;
+    height: 100%;
+    align-items: center;
+}
+
+#portada-nav__menu{
+    width: 100%;
+    height:100%;
+    list-style: none;
+    position:relative;
+    right: 2em;
+    display:flex;
+    flex-direction: row;
+    margin:0 auto;
+    align-items: center;
+}
+
+#portada-nav__menu > li{
+
+    display: inline-block;
+    margin: 0 2em 0 0; 
+}
+
+#portada-nav__menu > li > a{
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+#portada-nav__menu  li  a:hover,#portada-nav__menu  li  a:active{
+    color: rgb(143, 16, 16);
+    transition: all 1s;
+}
+.portada-menu__botones{
+    
+    display: flex;
+    height:100%;
+    padding:.2em;
+}
+#portada-menu__productos{
+    padding-bottom:2em;
+    position:relative;
+    top:1em;
+}
+#portada-menu__productos:hover #portada-submenu,#portada-menu__productos:active #portada-submenu{
+    display:block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+#portada-submenu{
+    width: 90%;
+    position:absolute;
+    list-style: none;
+    background-color:rgb(255, 255, 255);
+    background-image:url(Fondos-de-cielo.jpg);
+    visibility:hidden; 
+    opacity: 0;
+    border: 1px solid black;
+    border-radius: 3%;
+    left:-2em;
+    top:62%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#portada-submenu li a{
+    display: block;
+    padding: 10px 0 10px 0;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+#presentacion{
+    display:grid;
+    place-items: center;
+}
+#presentacion-link{
+    width:10em;
+    height:12.5em;
+    position:absolute;
+    right:0;
+    left:0;
+    margin:auto;
+    z-index:100;
+}
+#presentacion-contenedor{
+    display:flex;
+    width:18em;
+    height:18em; 
+}
+
+#presentacion-contenedor__img{
+    position: relative;
+    bottom:10.2%;
+    object-fit:contain;
+    z-index:-100;
+    
+}
+
+#presentacion-frase{
+    color:#000000;
+    font-size: 1.1em;
+    font-family: 'Waiting for the Sunrise', cursive;
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+    position:relative;
+    bottom:3em;
+    margin:0 auto;
+}
+ /* INDEX */
+.muestra-contenedor{
+    width:90%; 
+    max-width:600px;
+    margin:auto; 
+    overflow:hidden;
+    box-shadow: 0 0 0 1px rgb(2, 2, 2),
+                0 10px 2.5em;
+    position:relative;
+}
+
+#muestra-slider{
+    display:flex;
+    width:700%;
+    height:23rem;
+    margin-left:-100%;
+}
+
+.muestra-contenedor:hover .muestra-slider__section{
+    opacity: 100%;
+    transition: all .5s;
+}
+
+.muestra-slider__section{
+    width:100%;
+    opacity: 50%;
+    transition: opacity .5s;
+}
+
+.slider-section__img{
+    display:block;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.muestra-contenedor__btn{
+    position:absolute;
+    top:50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    width:40px;
+    height:40px;
+    background:#969494;
+    opacity: 50%;
+    transition: all .5s;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.muestra-contenedor__btn:hover{
+    opacity: 100%;
+    transition: all .5s;
+    background:#FFF;
+    }
+
+#muestra-btn__izq{
+    left:10px;
+}
+#muestra-btn__der{
+    right:10px;
+}
+
+#categorias{
+    margin: 10% 0 10% 0;
+}
+#categorias-contenedor{
+    display:flex;
+    justify-content: center;
+}
+.categorias-contenedor__a{
+    background-color:rgba(73, 101, 112, 0.582);
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.5em;
+    border:1px solid black;
+    height: 1.1em;
+    width:23%;
+    display: flex;
+    justify-content: center;
+    margin: 0 2% 0 2%;
+    padding: 2% 2% 2% 2%;
+    box-shadow: 0 0 0 1px rgb(26, 62, 77); 
+    text-decoration:none;
+}
+.categorias-contenedor__span{
+    color: black;
+}
+
+.categorias-contenedor__a:hover{
+    background-color:rgba(29, 57, 68, 0.582);
+}
+
+
+#envio{
+    display:flex;
+    justify-content: center;
+    position:relative;
+    top:8em;
+}
+#envio-contenedor{
+    width:80%;
+    height:15em;
+    margin-bottom:10%;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    
+}
+#envio-contenedor__coche{
+    width:30%;
+    height:30%;
+    position:absolute;
+    
+}
+#envio-contenedor__calle{
+    width:calc(80px / 0.707);
+    height:1em;
+    background: repeating-linear-gradient(-45deg, currentColor 0 15px,#0000 0 20px) left/200% 100%;
+    animation:i3 2s infinite linear;
+    position:absolute;
+    margin-top:4em;
+  }
+
+  @keyframes i3 {
+      100% {background-position:right}
+
+}
+
+#envio-contenedor__texto-envio{
+    position:absolute;
+    margin-top: 5em;
+    font-size: 1.5em;
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+}
+
+#pago-mobile{
+    display:flex;
+    justify-content: center;
+    margin-top:5em;
+    position:relative;
+    top:5em;
+}
+#pago-desktop{
+    display:none;
+}
+
+.pago-contenedor{
+    width:80%;
+    height:18em;
+    display: flex;
+    justify-content: center;
+}
+
+.pago-subcontenedor{
+    display:flex;
+    align-items:center;
+    margin:0 1em 0 1em; 
+    flex-direction: column;
+}
+
+.pago-subcontenedor > span{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:500;
+    font-size: 1em;
+    text-align: center;
+}
+
+.pago__img{
+    width:3em;
+    height:3em;
+    margin:0 1em 0 1em;
+}
+
+
+#footer-contenedor{
+    border-top: 1px solid transparent;
+    box-shadow: 5px 5px 5px 6px rgb(2, 2, 34);
+    height: 21em;
+    width:100%;
+    background-color:rgba(47, 52, 56, 0.582);
+    background-image:url(Fondos-de-cielo.jpg);
+    background-size: cover;
+    display: flex;
+    
+    position:relative;
+}
+
+#footer-contenedor__menu{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+
+.footer-subcontenedor{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: .5em;
+}
+#footer-contenedor__izqder{
+    display:flex;
+}
+#footer-contenedor__derecha{
+    margin-left:2em;
+}
+#footer-contenedor__webpage{
+    position:absolute;
+    left:0%;
+    top:85%;
+    display:flex;
+}
+#footer-webpage__span{
+    margin:.5em;
+    font-size:1.1em;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.footer-titulo{
+    font-size:1.1em;
+    font-weight: 700;
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    margin-bottom:.3em;
+
+}
+.footer-items{
+    font-size:1.1em;
+}
+.footer-links{
+    text-decoration: none;
+    color:black;
+}
+
+/* QUIEN SOY */
+
+#quiensoy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:10em;
+}
+.quiensoy-contenedorseccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quiensoy-contenedordeimg{
+    border:5px solid rgba(38, 85, 104, 0.582);
+    display:flex;
+    width:10em;
+    height: 10em;
+    position:relative;
+}
+.quiensoy-contenedor__img{
+    position:absolute;
+    display: block;
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    
+}
+
+#quiensoy > div > div > h2, .productos-contenedor>h2{
+    font-family: 'Amatic SC', cursive; 
+    font-weight: 500;
+    font-size: 3em;
+}
+#quiensoy> div > div > span, #quiensoy > span {
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin:1em 2em;     
+}
+#quiensoy>span{
+    font-family: 'Patrick Hand', cursive;
+    margin-top:3em;
+    font-size: 1.5em;
+    font-weight:600;
+    text-shadow: 0.5px 0.5px rgb(59, 59, 59);
+} 
+
+/* PRODUCTOS */ 
+
+.productos-contenedor{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.productos-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em 0 15em 0;
+    justify-content: center;
+}
+
+.productos-galeria__contenedores{ 
+   width:20em;
+   height:25em;
+   margin:.5em;
+   align-items: center;
+   text-align:center;
+   display: flex;
+   flex-direction: column;
+}
+.productos-galeria__imgs{
+    width:80%;
+    height:80%;
+    transition:all .1s;
+    border:1px solid #333;
+    box-shadow:0 0 0 1px rgb(0, 0, 0);
+}
+.productos-galeria__imgs:hover, .productos-galeria__imgs:active{
+    width:82%;
+    height:82%;
+    transition:all .1s;
+}
+.productos-galeria__descripcion{
+    font-family: 'Righteous', cursive;
+    font-style: oblique;
+    font-size:1em;
+    margin:.5em;
+    
+}
+
+@media only screen and (min-width: 850px) { 
+    
+    #portada-nav__menu > li > a{
+        font-size:1.2em;
+        padding:.5rem;
+    }
+    #portada-submenu{
+        top:65%;
+    }
+    #portada-submenu li a{
+        font-size:1.1em;
+    }
+    
+    #presentacion-contenedor{ 
+        width:23em;
+        height:23em;
+        
+    }
+    
+    #presentacion-contenedor__img{
+        position: relative;
+        bottom:10.2%;
+        object-fit:contain;
+        
+    }
+    
+    #presentacion-frase{
+        font-size: 1.5em;
+    }
+    #envio{
+        top:1em;
+    }
+    
+    #pago-mobile{
+        display:none;
+    }
+   
+    .pago-subcontenedor > span{
+        font-size: 1.2em;
+    }
+        
+    .pago__img{
+        width:4em;
+        height:4em;
+    }
+
+    #footer-contenedor{
+        height:20em;
+    }
+
+    #footer-contenedor__pagos-mobile{
+        display:none;
+    }
+    #footer-contenedor__pagos-desktop{
+        display: flex;
+        height:4em;
+    }
+    #pago-desktop{
+        display:flex;
+        justify-content: center;
+    }
+    .footer-contenedor__izqder{
+        margin-left:1em;
+    }
+    #footer-webpage__span{
+        font-size:1.5em;
+        margin:0 .5em;
+    }
+
+    
+    .footer-titulo{
+        font-size:1.5em;
+        
+    }
+    .footer-items{
+        font-size: 1.3em;
+    }
+    
+    #quiensoy>span{
+        font-size: 1.5em;
+        font-weight:600;
+        text-shadow: 0.5px 0.5px rgb(59, 59, 59);
+        margin-top:5em;
+    }
+
+}
+
+@media only screen and (min-width: 1250px){
+
+    #quiensoy{
+        justify-content: space-around;
+        align-items: center;
+        position:relative;
+        height:40em;
+    }
+    #quiensoy-contenedortotal{
+        display: flex;
+        gap:10em;
+    }
+    .quiensoy-contenedorseccion{
+        display:flex;
+        flex:1;
+        padding:20px;
+        margin:0 3em;
+        border: 1px transparent;
+        box-shadow: 1px 2px 7px 2px rgb(14, 14, 56);
+        background-color: rgba(4, 60, 82, 0.582); 
+    }
+    .quiensoy-contenedordeimg{
+        display: flex;
+        flex-direction: column;
+    }
+    #quiensoy>span{
+        margin:5em 20em 1em 20em;
+    }
+
+}
